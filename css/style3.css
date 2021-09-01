@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(91, 158, 216);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo{
+    color: skyblue;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: skyblue;
+}
+
+.container{width: 300px;
+    overflow: hidden;
+    margin: 50px auto 0 auto;
+  }
+
+.container span{width: 100%;
+         display: block;
+         text-align: center;
+         font-family: sans-serif;
+         color: #fff;
+         font-size: 40px;
+         font-weight: 700;
+         background: skyblue;
+         justify-content: center;
+         margin-top: 100px;
+        }
+
+.container .box{float: left;
+         width: 100px;
+         height: 100px;
+         border: 1px solid #000;
+         transition: all .25s ease-in-out;
+         font-family: sans-serif; 
+         font-size: 85px;
+         text-align: center;
+         line-height: 100px; 
+         cursor: pointer;
+         justify-content: center;
+         padding-bottom: 20px;
+       }
+
+.container .box:hover{background: rgba(10,10,10,0.5);
+               color: #fff
+              }
+
+button{background: skyblue;
+color: #fff;
+font-weight: bold;
+border: 1px solid wheat;
+ cursor: pointer; 
+ width: 200px;
+ height: 40px; 
+ font-size: 22px;
+ display: block;
+ margin: 10px auto}
+
+.win{background: skyblue; color: #fff}
