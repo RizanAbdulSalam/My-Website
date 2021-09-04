@@ -45,6 +45,92 @@
     </div>
 
 <script src="../js/index2.js"></script>
+    
+    <script>
+     const music = document.querySelector("audio");
+        const img = document.querySelector("img");
+        const play = document.getElementById("play");
+        const artist = document.getElementById("artist");
+        const title = document.getElementById("title");
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+
+        let progress = document.getElementById("progress");
+        let total_duration = document.getElementById("duration");
+        let current_time = document.getElementById("current_time");
+        const progress_div = document.getElementById("progress_div");
+
+
+
+        const songs = [
+            {
+                name: "song-1",
+                title: "One Dance",
+                artist: "Drake ft.Wizkid & Kyla",
+            },
+            {
+                name: "song-2",
+                title: "Lucid Dreams",
+                artist: "Juice Wrld",
+            },
+            {
+                name: "song-3",
+                title: "Ransom",
+                artist: "Lil Tecca",
+            },
+
+        ];
+
+
+
+
+
+        let isPlaying = false;
+
+        // for play function
+        const playMusic = () => {
+            isPlaying = true;
+            music.play();
+            play.classList.replace("fa-play", "fa-pause");
+        };
+
+        // for pause function
+        const pauseMusic = () => {
+            isPlaying = false;
+            music.pause();
+            play.classList.replace("fa-pause", "fa-play");
+        };
+
+        play.addEventListener("click", () => {
+            if (isPlaying) {
+                pauseMusic();
+            } else {
+                playMusic();
+            }
+        });
+
+        const loadSong = (songs) => {
+            title.textContent = songs.title;
+            artist.textContent = songs.artist;
+            music.src = "../music/" + songs.name + ".mp3";
+            img.src = "../images/" + songs.name + ".jpg";
+        };
+
+        songIndex = 0;
+
+        const nextSong = () => {
+            songIndex = (songIndex + 1) % songs.length;
+            loadSong(songs[songIndex]);
+            playMusic();
+        };
+
+        const prevSong = () => {
+            songIndex = (songIndex - 1 + songs.length) % songs.length;
+            loadSong(songs[songIndex]);
+            playMusic();
+        };
+
+        //progress js work</script>
 </body>
 
 </html>
