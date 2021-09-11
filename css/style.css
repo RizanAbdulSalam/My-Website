@@ -628,7 +628,7 @@ img{
     width: 82%;
 }
 
-.skills__js , .skills__reactjs{
+.skills__js{
     width: 60%;
 }
 
@@ -643,6 +643,10 @@ img{
 
 .skills__python{
     width: 30%;
+}
+
+.skills__reactjs{
+    width: 60%;
 }
 
 .skills__close .skills__list{
