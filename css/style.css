@@ -634,15 +634,19 @@ img{
 
 
 .skills__c{
-    width: 35%;
+    width: 30%;
 }
 
 .skills__java{
-    width: 40%;
+    width: 25%;
 }
 
 .skills__python{
-    width: 50%;
+    width: 30%;
+}
+
+.skills__reactjs{
+    width: 60%;
 }
 
 .skills__close .skills__list{
