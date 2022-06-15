@@ -18,9 +18,9 @@
             <h2 id="title">Vice City</h2>
             <h3 id="artist">J fletch</h3>
             <div class="img_container">
-                <img src="D:\HTML\MyWebsite\images\song-1.jpg" alt="">
+                <img src="..\images\song-1.jpg" alt="">
             </div>
-            <audio src="D:\HTML\MyWebsite\music\song-1.mp3"></audio>
+            <audio src="..\music\song-1.mp3"></audio>
 
             <!--Progress Bar-->
 
@@ -110,8 +110,8 @@
         const loadSong = (songs) => {
             title.textContent = songs.title;
             artist.textContent = songs.artist;
-            music.src = "D:/HTML/MyWebsite/music/" + songs.name + ".mp3";
-            img.src = "D:/HTML/MyWebsite/images/" + songs.name + ".jpg";
+            music.src = "../music/" + songs.name + ".mp3";
+            img.src = "../images/" + songs.name + ".jpg";
         };
 
         songIndex = 0;
