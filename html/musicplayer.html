@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happie Music Player</title>
-    <link rel="stylesheet" href="../css/style5.css">
-    <link rel="icon" href="../images/happie.png">
+    <title>Music Player By Rizan</title>
+    <link rel="stylesheet" href="D:\HTML\MyWebsite\css\style5.css">
+    <link rel="icon" href="D:/HTML/MyWebsite/images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,19 +15,19 @@
 <body>
     <div class="main_div">
         <div class="music_container">
-            <h2 id="title">Luicd Dreams</h2>
-            <h3 id="artist">Juice Wrld</h3>
+            <h2 id="title">Vice City</h2>
+            <h3 id="artist">J fletch</h3>
             <div class="img_container">
-                <img src="../images/song-2.jpg" alt="">
+                <img src="D:\HTML\MyWebsite\images\song-1.jpg" alt="">
             </div>
-            <audio src="../music/song-2.mp3"></audio>
+            <audio src="D:\HTML\MyWebsite\music\song-1.mp3"></audio>
 
             <!--Progress Bar-->
 
             <div class="progressbar_container" id="progress_container">
                 <div class="progress_duration_meter">
                     <div id="current_time" style="color: white;">0:00</div>
-                    <div id="duration" style="color: white;">3:55</div>
+                    <div id="duration" style="color: white;">2:55</div>
                 </div>
                 <div class="progress_div" id="progress_div">
                     <div class="progress" id="progress"></div>
@@ -43,8 +43,8 @@
             </div>
         </div>
     </div>
-    
-        <script>
+
+    <script>
         const music = document.querySelector("audio");
         const img = document.querySelector("img");
         const play = document.getElementById("play");
@@ -63,18 +63,18 @@
         const songs = [
             {
                 name: "song-1",
-                title: "One Dance",
-                artist: "Drake ft.Wizkid & Kyla",
+                title: "Vice City",
+                artist: "J fletch",
             },
             {
                 name: "song-2",
-                title: "Lucid Dreams",
-                artist: "Juice Wrld",
+                title: "Star Gazers",
+                artist: "J Fletch",
             },
             {
-                name: "song-4",
-                title: "Perfect",
-                artist: "Ed Sheeran",
+                name: "song-3",
+                title: "Deep Sea",
+                artist: "Toti Cisneros, F_rlan",
             },
 
         ];
@@ -110,8 +110,8 @@
         const loadSong = (songs) => {
             title.textContent = songs.title;
             artist.textContent = songs.artist;
-            music.src = "../music/" + songs.name + ".mp3";
-            img.src = "../images/" + songs.name + ".jpg";
+            music.src = "D:/HTML/MyWebsite/music/" + songs.name + ".mp3";
+            img.src = "D:/HTML/MyWebsite/images/" + songs.name + ".jpg";
         };
 
         songIndex = 0;
@@ -182,10 +182,6 @@
         prev.addEventListener("click", prevSong);
 
     </script>
-</body>
-
-</html>
-    
 </body>
 
 </html>
